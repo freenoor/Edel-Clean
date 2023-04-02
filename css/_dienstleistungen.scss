@@ -1,0 +1,237 @@
+.ld_dienstleistungen{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    .img{
+        position: absolute;
+        height: 400px;
+        img{
+            width: 100%;
+            height: 100%;
+            opacity: .3;
+            object-fit: contain;
+        }
+    }
+    .intro{
+        min-height: 400px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        position: relative;
+        z-index: 1;
+        .intro-post{
+            flex: 1 0 auto;
+            a{
+                text-decoration: none;
+            }
+            img{
+                margin: 10px 0px;
+                width: 90px;
+                height: 70px;
+            }
+            h2{
+                @include muli_font(20pt, $black);
+                font-weight: bold;
+                @media(max-width: 991.98px){
+                    font-size: 16pt;
+                }
+
+            }
+            p{
+                @include muli_font(12pt, $black);
+                font-weight: lighter;
+                @media(max-width: 991.98px){
+                    font-size: 11pt;
+                }
+            }
+        }
+    }
+    .after-intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .after-intro-post{
+            display: flex;
+            img{
+                width: 100%;
+                height: 490px;
+                object-fit: cover;
+            }
+            .bg-grey{
+                background-color: $grey;
+            }
+            .text{
+                padding: 0px 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            
+                h2{
+                    @include muli_font(20pt);
+                    font-weight: bold;
+                }
+                p{
+                    @include muli_font(13pt);
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+    .wie-arbeiten-home{
+        width: 100%;
+        margin: 100px 0px;
+        text-align: center;
+        h2{
+            @include title_font(28pt);
+        }
+        p{
+            @include muli_font(14pt, $black, unset);
+            width: 60%;
+            margin: 10px auto;
+        }
+    }
+    .wie-arbeiten-posts{
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .button{
+            &:hover{
+                text-decoration: none;
+            }
+            .wie-arbeite-post{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            &:hover{
+                img{
+                box-shadow: 0 0 25px 2px rgba(0,0,0,0.6);
+                transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+                border-bottom: 4px solid #75c9cc7d;
+                }
+            }
+            img{
+                width: 160px;
+                border-radius: 50%;
+                border-bottom: 4px solid $lightGreen;
+                height: 160px;
+                box-shadow: 0 0 15px 2px rgba(0,0,0,0.6);
+                transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+                object-fit: cover;
+            }
+            h2{
+                @include muli_font(18pt);
+                padding: 15px 0px;
+                margin: 0px;
+            }
+            p{
+                @include muli_font(12pt);
+                margin: 0px;
+            }
+            }
+        }
+    }
+}
+@media(max-width: 991.98px){
+    .ld_dienstleistungen{
+        .intro{
+            margin: 50px 0px;
+        }
+        .after-intro{
+            margin: 50px 0px;
+            .after-intro-post{
+                flex-direction: column;
+                img{
+                    width: 100%;
+                    height: 490px;
+                }
+                .text{
+                    padding: 20px 10px;
+                    h2{
+                        @include muli_font(20pt);
+                        font-weight: bold;
+                    }
+                    p{
+                        @include muli_font(13pt);
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+        .wie-arbeiten{
+            p{
+                width: 100%;
+                padding: 10px;
+            }
+        }
+        .wie-arbeiten-posts{
+            margin-bottom: 20px;
+            .wie-arbeite-post{
+                margin-bottom: 30px;
+                img{
+                    width: 160px;
+                    border-radius: 50%;
+                    border: 4px solid $lightGreen;
+                    height: 160px;
+                }
+                h2{
+                    @include muli_font(18pt);
+                    padding: 15px 0px;
+                    margin: 0px;
+                }
+                p{
+                    @include muli_font(12pt);
+                    width: 100%;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767.98px){
+    .ld_dienstleistungen{
+        .intro{
+            margin: 0!important;
+            .intro-post{
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+@media(max-width: 575.98px){
+    .ld_dienstleistungen{
+        .after-intro{
+            .after-intro-post{
+                img{
+                    height: 410px;
+                }
+                .text{
+                    h2{
+                        @include muli_font(18pt);
+                    }
+                    p{
+                        @include muli_font(12pt);
+                    }
+                }
+            }
+        }
+        .wie-arbeiten{
+            margin: 40px 0px 30px;
+            h2{
+                font-size: 24pt;
+            }
+        }
+    }
+}

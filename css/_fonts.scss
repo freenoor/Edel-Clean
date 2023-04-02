@@ -1,0 +1,29 @@
+@mixin title_font($size: 36pt, $color: $black, $transform: uppercase){
+    font-family: 'Muli', sans-serif;
+    font-size: $size;
+    text-transform: $transform;
+    color: $color;
+}
+
+@mixin muli_font($size: 14pt, $color: $black, $transform: capitalize){
+    font-family: 'Muli', sans-serif;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin rubik_font($size: 14pt, $color: $white, $transform: capitalize){
+    font-family: 'Rubik', sans-serif;
+    font-size: $size;
+    color: $color;
+}
+@mixin diplomata_font($size: 34pt, $color: $white, $transform: capitalize){
+    font-family: 'Diplomata', sans-serif;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin frekoda_font($size: 34pt, $color: $white, $transform: capitalize){
+    font-family: 'Fredoka One', cursive;
+    font-size: $size;
+    color: $color;
+} 

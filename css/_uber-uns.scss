@@ -1,0 +1,306 @@
+.ld_uber-uns-home{
+    .wir-sind{
+        .p-0{
+            padding-right: 20px!important;
+            @media(max-width: 991.98px){
+                padding-right: 0px!important;
+            }
+        }
+    }
+}
+.ld_uber-uns{
+    width: 100%;
+    z-index: 1;
+    svg{
+        margin: 10px 0px;
+    }
+    .unternehmen{
+        display: flex;
+        .p-0-img{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .text{
+            padding: 60px 10px 55px 70px;
+            @media (max-width: 1199.98px){
+                padding: 40px 30px 40px 40px;
+            }
+            h2{
+                @include muli_font(28pt, $black, unset);
+                @media (max-width: 375.98px){
+                    font-size: 22pt!important;
+                }
+            }
+            p{
+                @include muli_font(13pt, $black, unset);
+            }
+        }
+    }
+    .wir-sind{
+        display: flex;
+        background-color: $grey;
+        padding: 70px;
+        .p-0-g{
+            display: grid;
+            align-content: center;
+            height: 500px;
+            margin: auto;
+            @media(max-width: 991.98px){
+                order: -1;
+                margin-bottom: 50px;
+            }
+            @media(max-width: 474.98px){
+                height: 350px;
+            }
+            @media(max-width: 375.98px){
+                height: 300px;
+            }
+        }
+        img{
+            @include elipse();
+            border-bottom: 6px solid $blue;
+            width: 90%;
+            transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+            &:hover{
+                border-bottom: 6px solid #75c9cc7d;
+                transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+            }
+        }
+        .text{
+            margin-bottom: 40px;
+            h2{
+                @include muli_font(28pt, $black, unset);
+                @media(max-width: 474.98px){
+                    font-size: 22pt !important;
+                }
+            }
+            p{
+                @include muli_font(13pt, $black, unset);
+                @media(max-width: 474.98px){
+                    font-size: 12pt!important;
+                }
+            }
+        }
+        a{
+            @include muli_font(13pt, $white, unset);
+            // @include elipse-h();
+            background: $gradientBlue;
+            padding: 16px 30px 17px 15px;
+            transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+                @media(max-width: 474.98px){
+                    padding: 13px 25px 13px 10px;
+                }
+            &:hover{
+                text-decoration: none;
+                background: $gradientBlueRev;
+                box-shadow: 6px 7px 1px #75c9cc7d;
+                transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+            }
+        }
+    }
+    .team{
+        width: 100%;
+        text-align: center;
+        margin: 50px 0px;
+        .text{
+            h2{
+                @include muli_font(28pt, $black, unset);
+                @media (max-width: 991.98px){
+                    font-size: 26pt;
+                }
+                @media (max-width: 575.98px){
+                    font-size: 24pt!important;
+                }
+                @media (max-width: 375.98px){
+                    font-size: 22pt!important;
+                }
+            }
+            p{
+                @include muli_font(13pt, $black, unset);
+                width: 60%;
+                margin: 10px auto;
+                @media (max-width: 991.98px){
+                    font-size: 12pt!important;
+                }
+            }
+        }
+        &-posts{
+            margin: 50px 0px;
+            width: 100%;
+            .team-post{
+                margin: 20px 0px;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 250px;
+                    @include elipse();
+                    border:  3px solid $lightGreen;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                h2{
+                    @include muli_font(16pt);
+                    padding: 15px 0px;
+                }
+                p{
+                    @include muli_font(12pt);
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1373px){
+    .ld_uber-uns{
+        .unternehmen{
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+@media(max-width: 991.98px){
+    .p-0-img{
+        order: 1;
+    }
+    .ld_uber-uns{
+        .unternehmen{
+            text-align: center;
+            img{
+                height: 450px;
+            }
+            .text{
+                padding: 70px 15px;
+                h2{
+                    @include muli_font(26pt, $black, unset);
+                }
+                p{
+                    @include muli_font(12pt, $black, unset);
+                }
+            }
+        }
+        .wir-sind{
+            padding: 50px 15px;
+            text-align: center;
+            img{
+                width: 50%;
+                margin: 10px auto;
+                display: flex;
+            }
+            .text{
+                h2{
+                    @include muli_font(26pt, $black, unset);
+                }
+                p{
+                    @include muli_font(12pt, $black, unset);
+                }
+            } 
+        }
+        .team{
+            width: 100%;
+            text-align: center;
+            margin: 50px 0px;
+            .text{
+                padding: 0px 15px;
+                h2{
+                    @include muli_font(26pt, $black, unset);
+                }
+                p{
+                    @include muli_font(12pt, $black, unset);
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767.98px){
+
+    .forback{
+        @include elipse();
+        border-bottom: 6px solid $blue;
+        width: 90%;
+        transition: .3s ease-in-out;
+            -webkit-transition: .3s ease-in-out;
+            -moz-transition: .3s ease-in-out;
+            -ms-transition: .3s ease-in-out;
+            -o-transition: .3s ease-in-out;
+            background-position: center;
+            background-size: cover;
+            &:hover{
+                border-bottom: 6px solid #75c9cc7d;
+                transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+            }
+    }
+    .ld_uber-uns{
+        .wir-sind{
+            img{
+                width: 80%;
+            }
+        }
+        .team{
+            &-posts{
+                .team-post{
+                    img{
+                        width: 65%;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 575.98px){
+    .ld_uber-uns{
+        .unternehmen{
+            .text{
+                h2{
+                    font-size: 24pt;
+                }
+            }
+        }
+        .wir-sind{
+            img{
+                width: 100%;
+            }
+            .text{
+                h2{
+                    font-size: 24pt;
+                }
+            }
+        }
+        .team{
+            &-posts{
+                .team-post{
+                    img{
+                        width: 100%;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}

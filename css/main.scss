@@ -1,0 +1,92 @@
+@import 'colors';
+@import 'fonts';
+@import 'elipse';
+@import 'header';
+@import 'footer';
+@import 'contact';
+@import 'dienstleistungen';
+@import 'uber-uns';
+@import 'arbeit';
+@import 'categorypages';
+@import 'org';
+@import 'reference';
+@import 'single-port';
+
+::-moz-selection {
+    background-color: transparent;
+    color: #65bcff;
+}
+::selection {
+    background-color: transparent;
+    color: #65bcff;
+}
+select::-ms-expand {
+    display: none;
+}
+body{
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    scroll-behavior: smooth;
+    
+    &::-webkit-scrollbar{
+        width: 13px;
+    }
+    &::-webkit-scrollbar-track-piece{
+        background-color: rgba(0, 0, 0, 0.10);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-image: linear-gradient(transparent, #76cbEE, transparent);
+    &:hover{
+        background-image: linear-gradient(transparent, transparent, #76cbEE, transparent, transparent);
+    }
+    }
+    &::-webkit-scrollbar-button{
+        &:single-button{
+            background-image: linear-gradient(#76cbEE, transparent);
+        &:vertical{
+            &:decrement {
+                border-color: transparent transparent  transparent;
+                background-color: rgba(0, 0, 0, 0.10);
+            }
+        &:increment {
+            background-image: linear-gradient(transparent, #76cbEE);
+            background-color: rgba(0, 0, 0, 0.10);
+            }
+        }
+    }
+}
+}
+.wpcf7-not-valid{
+    border: 1px solid red !important;
+}
+.forback{
+    @media(min-width:767.98px){
+        border-top-right-radius: 85%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 100%;
+        border-bottom: 6px solid #65bcff;
+        width: 90%;
+        transition: .3s ease-in-out;
+        -webkit-transition: .3s ease-in-out;
+        -moz-transition: .3s ease-in-out;
+        -ms-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+
+.simple_back{
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(min-width:767.98px){
+        
+        background-attachment: fixed;
+    }
+}
